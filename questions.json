@@ -1,0 +1,369 @@
+{
+  "categories": [
+    {
+      "name": "Person 1",
+      "round1": [
+        {
+          "points": 200,
+          "question": "What is Person 1's favorite Christmas movie?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 400,
+          "question": "What is Person 1's favorite holiday treat?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 600,
+          "question": "What is Person 1's most memorable Christmas gift they ever received?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What Christmas tradition does Person 1 look forward to most?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1000,
+          "question": "What embarrassing Christmas moment does Person 1 wish everyone would forget?",
+          "answer": "[Your answer here]"
+        }
+      ],
+      "round2": [
+        {
+          "points": 400,
+          "question": "What was Person 1's childhood nickname?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What is Person 1's secret talent that few people know about?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1600,
+          "question": "What is Person 1's most controversial opinion?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 2000,
+          "question": "What is Person 1's biggest fear?",
+          "answer": "[Your answer here]"
+        }
+      ]
+    },
+    {
+      "name": "Person 2",
+      "round1": [
+        {
+          "points": 200,
+          "question": "What is Person 2's favorite Christmas song?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 400,
+          "question": "What is Person 2's go-to holiday drink?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 600,
+          "question": "Where did Person 2 spend their most memorable Christmas?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What gift does Person 2 secretly hope to receive every year?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1000,
+          "question": "What is Person 2's hot take about Christmas decorations?",
+          "answer": "[Your answer here]"
+        }
+      ],
+      "round2": [
+        {
+          "points": 400,
+          "question": "What was Person 2's first job?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What is Person 2's guilty pleasure TV show?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1600,
+          "question": "What life goal is Person 2 secretly working towards?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 2000,
+          "question": "What is the most spontaneous thing Person 2 has ever done?",
+          "answer": "[Your answer here]"
+        }
+      ]
+    },
+    {
+      "name": "Person 3",
+      "round1": [
+        {
+          "points": 200,
+          "question": "What does Person 3 always bring to family gatherings?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 400,
+          "question": "What is Person 3's favorite holiday activity?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 600,
+          "question": "What Christmas gift did Person 3 regift and to whom?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What is Person 3's opinion on fruitcake?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1000,
+          "question": "What is the worst Christmas present Person 3 ever gave someone?",
+          "answer": "[Your answer here]"
+        }
+      ],
+      "round2": [
+        {
+          "points": 400,
+          "question": "What is Person 3's morning routine?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What is Person 3's pet peeve?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1600,
+          "question": "What celebrity does Person 3 have a crush on?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 2000,
+          "question": "What is Person 3's most embarrassing story?",
+          "answer": "[Your answer here]"
+        }
+      ]
+    },
+    {
+      "name": "Person 4",
+      "round1": [
+        {
+          "points": 200,
+          "question": "What is Person 4's favorite winter activity?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 400,
+          "question": "What ornament does Person 4 always put on the tree?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 600,
+          "question": "What is Person 4's signature holiday dish?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What New Year's resolution has Person 4 made multiple times but never kept?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1000,
+          "question": "What is Person 4's unpopular Christmas opinion?",
+          "answer": "[Your answer here]"
+        }
+      ],
+      "round2": [
+        {
+          "points": 400,
+          "question": "What is Person 4's hidden hobby?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What is Person 4's dream vacation destination?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1600,
+          "question": "What is Person 4's most prized possession?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 2000,
+          "question": "What secret about Person 4 would surprise the family?",
+          "answer": "[Your answer here]"
+        }
+      ]
+    },
+    {
+      "name": "Person 5",
+      "round1": [
+        {
+          "points": 200,
+          "question": "What is Person 5's favorite thing about Christmas?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 400,
+          "question": "Real tree or fake tree - what does Person 5 prefer?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 600,
+          "question": "What Christmas carol does Person 5 secretly hate?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What is Person 5's strategy for gift shopping?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1000,
+          "question": "What holiday tradition would Person 5 eliminate if they could?",
+          "answer": "[Your answer here]"
+        }
+      ],
+      "round2": [
+        {
+          "points": 400,
+          "question": "What is Person 5's comfort food?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What is Person 5's karaoke song?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1600,
+          "question": "What would Person 5 do with a million dollars?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 2000,
+          "question": "What is Person 5's most irrational fear?",
+          "answer": "[Your answer here]"
+        }
+      ]
+    },
+    {
+      "name": "Person 6",
+      "round1": [
+        {
+          "points": 200,
+          "question": "What is Person 6's favorite holiday memory?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 400,
+          "question": "What does Person 6 always ask for but never receive?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 600,
+          "question": "What is Person 6's holiday shopping style - early bird or last minute?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What childhood Christmas belief did Person 6 hold onto the longest?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1000,
+          "question": "What is the most creative gift Person 6 has ever given?",
+          "answer": "[Your answer here]"
+        }
+      ],
+      "round2": [
+        {
+          "points": 400,
+          "question": "What is Person 6's catchphrase?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What skill does Person 6 wish they had?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1600,
+          "question": "What is Person 6's most unpopular opinion?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 2000,
+          "question": "What would Person 6's autobiography be titled?",
+          "answer": "[Your answer here]"
+        }
+      ]
+    },
+    {
+      "name": "Person 7",
+      "round1": [
+        {
+          "points": 200,
+          "question": "What is Person 7's favorite holiday dessert?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 400,
+          "question": "What holiday movie does Person 7 watch every year?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 600,
+          "question": "What is Person 7's least favorite thing about the holidays?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What is Person 7's go-to excuse to avoid holiday events?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1000,
+          "question": "What holiday mishap has Person 7 caused?",
+          "answer": "[Your answer here]"
+        }
+      ],
+      "round2": [
+        {
+          "points": 400,
+          "question": "What is Person 7's morning beverage of choice?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 800,
+          "question": "What is Person 7's hidden talent?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 1600,
+          "question": "What is Person 7's biggest accomplishment they don't brag about?",
+          "answer": "[Your answer here]"
+        },
+        {
+          "points": 2000,
+          "question": "What truth or dare question would make Person 7 choose dare every time?",
+          "answer": "[Your answer here]"
+        }
+      ]
+    }
+  ]
+}
+

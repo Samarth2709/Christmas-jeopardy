@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Jeopardy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Snowflakes Container -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+    </div>
+
+    <!-- Setup Screen -->
+    <div id="setup-screen" class="screen">
+        <div class="setup-container">
+            <h1 class="game-title">🎄 Christmas Jeopardy 🎄</h1>
+            <p class="setup-subtitle">Enter the names of the contestants</p>
+            
+            <div id="participant-inputs">
+                <div class="participant-input-group">
+                    <label>Contestant 1:</label>
+                    <input type="text" class="participant-name" placeholder="Enter name...">
+                    <button class="remove-btn" onclick="removeParticipant(this)">✕</button>
+                </div>
+                <div class="participant-input-group">
+                    <label>Contestant 2:</label>
+                    <input type="text" class="participant-name" placeholder="Enter name...">
+                    <button class="remove-btn" onclick="removeParticipant(this)">✕</button>
+                </div>
+            </div>
+            
+            <button id="add-participant-btn" onclick="addParticipant()">+ Add Contestant</button>
+            <button id="start-game-btn" onclick="startGame()">🎅 Start Game 🎅</button>
+            
+            <p class="setup-note">Questions will be loaded from questions.json</p>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen hidden">
+        <!-- Header -->
+        <header class="game-header">
+            <h1 id="round-title">Round 1</h1>
+            <div class="header-controls">
+                <button id="next-round-btn" class="control-btn hidden" onclick="startNextRound()">
+                    🎄 Double Jeopardy 🎄
+                </button>
+                <button id="end-game-btn" class="control-btn hidden" onclick="endGame()">
+                    🏆 End Game 🏆
+                </button>
+                <button id="download-scores-btn" class="control-btn" onclick="downloadScores()">
+                    📥 Download Scores
+                </button>
+            </div>
+        </header>
+
+        <!-- Scoreboard -->
+        <div id="scoreboard">
+            <!-- Dynamically populated -->
+        </div>
+
+        <!-- Game Board -->
+        <div id="game-board">
+            <!-- Dynamically populated -->
+        </div>
+    </div>
+
+    <!-- Question Modal -->
+    <div id="question-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="modal-category"></span>
+                <span id="modal-points"></span>
+            </div>
+            
+            <div id="question-text"></div>
+            
+            <button id="reveal-answer-btn" onclick="revealAnswer()">
+                🎁 Reveal Answer 🎁
+            </button>
+            
+            <div id="answer-text" class="hidden"></div>
+            
+            <div id="award-section" class="hidden">
+                <p class="award-label">Award points to:</p>
+                <div id="award-buttons">
+                    <!-- Dynamically populated -->
+                </div>
+                <div class="wrong-answer-section">
+                    <p class="deduct-label">Deduct points from:</p>
+                    <div id="deduct-buttons">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+            </div>
+            
+            <button id="close-modal-btn" onclick="closeModal()">
+                Close Question
+            </button>
+        </div>
+    </div>
+
+    <!-- End Game Modal -->
+    <div id="end-game-modal" class="modal hidden">
+        <div class="modal-content end-game-content">
+            <h2>🎄 Game Over! 🎄</h2>
+            <div id="final-scores">
+                <!-- Dynamically populated -->
+            </div>
+            <div id="winner-announcement"></div>
+            <button onclick="downloadScores()">📥 Download Final Scores</button>
+            <button onclick="newGame()">🔄 New Game</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
+
