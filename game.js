@@ -177,6 +177,8 @@ function renderGameBoard() {
 function updateNavigationButtons() {
     const nextRoundBtn = document.getElementById('next-round-btn');
     const endGameBtn = document.getElementById('end-game-btn');
+    const skipToDoubleBtn = document.getElementById('skip-to-double-btn');
+    const backToRound1Btn = document.getElementById('back-to-round1-btn');
     
     const roundKey = gameState.currentRound === 1 ? 'round1' : 'round2';
     // Round 1: 8 categories x 5 questions = 40
@@ -185,9 +187,15 @@ function updateNavigationButtons() {
     const usedCount = gameState.usedQuestions[roundKey].length;
     
     if (gameState.currentRound === 1) {
+        // Round 1: Show skip button, hide back button
+        skipToDoubleBtn.classList.remove('hidden');
+        backToRound1Btn.classList.add('hidden');
         nextRoundBtn.classList.toggle('hidden', usedCount < totalQuestions);
         endGameBtn.classList.add('hidden');
     } else {
+        // Round 2: Hide skip button, show back button
+        skipToDoubleBtn.classList.add('hidden');
+        backToRound1Btn.classList.remove('hidden');
         nextRoundBtn.classList.add('hidden');
         endGameBtn.classList.toggle('hidden', usedCount < totalQuestions);
     }
@@ -320,6 +328,18 @@ function closeModal() {
 // ===== Round Navigation =====
 function startNextRound() {
     gameState.currentRound = 2;
+    renderGameBoard();
+    saveGameState();
+}
+
+function skipToDoubleJeopardy() {
+    gameState.currentRound = 2;
+    renderGameBoard();
+    saveGameState();
+}
+
+function backToRound1() {
+    gameState.currentRound = 1;
     renderGameBoard();
     saveGameState();
 }
