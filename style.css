@@ -313,7 +313,7 @@ body {
 /* ===== Game Board ===== */
 #game-board {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 8px;
     padding: 20px;
     background: linear-gradient(180deg, #0a1f14 0%, #0d2818 100%);

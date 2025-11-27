@@ -74,8 +74,8 @@ async function startGame() {
         const data = await response.json();
         gameState.categories = data.categories;
         
-        if (gameState.categories.length !== 7) {
-            alert(`Warning: Expected 7 categories, found ${gameState.categories.length}`);
+        if (gameState.categories.length < 8) {
+            alert(`Warning: Expected at least 8 categories, found ${gameState.categories.length}`);
         }
     } catch (error) {
         alert('Error loading questions: ' + error.message + '\n\nMake sure questions.json exists in the same folder.');
@@ -128,12 +128,19 @@ function renderGameBoard() {
         ? [200, 400, 600, 800, 1000] 
         : [400, 800, 1600, 2000];
     
+    // Round 1: 8 categories, Round 2: 4 categories
+    const numCategories = gameState.currentRound === 1 ? 8 : 4;
+    const categoriesToShow = gameState.categories.slice(0, numCategories);
+    
     // Update round title
     document.getElementById('round-title').textContent = 
         gameState.currentRound === 1 ? 'Round 1' : '🎄 Double Jeopardy 🎄';
     
+    // Update grid columns based on round
+    gameBoard.style.gridTemplateColumns = `repeat(${numCategories}, 1fr)`;
+    
     // Create category headers
-    gameState.categories.forEach(category => {
+    categoriesToShow.forEach(category => {
         const header = document.createElement('div');
         header.className = 'category-header';
         header.textContent = category.name;
@@ -142,7 +149,7 @@ function renderGameBoard() {
     
     // Create question cells
     pointValues.forEach((points, rowIndex) => {
-        gameState.categories.forEach((category, colIndex) => {
+        categoriesToShow.forEach((category, colIndex) => {
             const cell = document.createElement('div');
             cell.className = 'question-cell';
             cell.dataset.category = colIndex;
@@ -172,7 +179,9 @@ function updateNavigationButtons() {
     const endGameBtn = document.getElementById('end-game-btn');
     
     const roundKey = gameState.currentRound === 1 ? 'round1' : 'round2';
-    const totalQuestions = gameState.currentRound === 1 ? 35 : 28; // 7 categories x 5 or 4 questions
+    // Round 1: 8 categories x 5 questions = 40
+    // Round 2: 4 categories x 4 questions = 16
+    const totalQuestions = gameState.currentRound === 1 ? 40 : 16;
     const usedCount = gameState.usedQuestions[roundKey].length;
     
     if (gameState.currentRound === 1) {
